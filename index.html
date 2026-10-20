@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf6ec">
+  <meta name="description" content="Cookies & Lemonade — homemade cookies, fresh lemonade, cookie boxes, and treats for every occasion.">
+  <title>Cookies &amp; Lemonade — Little batches, fresh sips</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement-bar" aria-label="Bakery note">
+    <span class="announcement-sparkle" aria-hidden="true">✳</span>
+    <span>Little batches · Fresh sips · Made with love</span>
+    <span class="announcement-sparkle" aria-hidden="true">✳</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Cookies and Lemonade home">
+        <img class="brand-logo" src="assets/cookies-and-lemonade-logo.svg" alt="Cookies &amp; Lemonade">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#top">Home</a><a href="#cookies">Cookies</a><a href="#lemonade">Lemonade</a><a href="#pricing">Pricing</a><a href="#catering">Catering</a><a href="#story">Our Story</a><a href="#faq">FAQ</a>
+        <a class="button button-small button-primary nav-order js-order-link" href="#order">Order Now <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="hero-heading">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> Baked fresh, shared happy <span class="eyebrow-heart" aria-hidden="true">♥</span></div>
+        <h1 id="hero-heading">Little batch treats, <em>made with love.</em></h1>
+        <p class="hero-description">Homemade cookies and bright, refreshing lemonade for everyday moments, thoughtful gifts, and special gatherings. A little something sweet is always a good idea.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#cookies">Meet the cookies <span aria-hidden="true">↗</span></a><a class="text-link js-order-link" href="#order">Plan an order <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><span>Cookies for sharing. Lemonade for sipping. <span class="handwritten">Always from the heart.</span></span></div>
+      </div>
+      <div class="hero-art reveal reveal-later" data-parallax>
+        <div class="hero-blob" aria-hidden="true"></div>
+        <div class="hero-photo-frame"><img class="hero-photo" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A cozy stack of homemade chocolate chip cookies" fetchpriority="high"></div>
+        <div class="hero-stamp"><span>cookies &amp;</span><strong>♡</strong><span>lemonade</span></div>
+        <div class="doodle doodle-spark" aria-hidden="true">✳</div><div class="doodle doodle-heart" aria-hidden="true">♡</div><div class="doodle doodle-tiny" aria-hidden="true">· · ·</div>
+        <div class="cookie-caption"><span class="caption-dot"></span> A little comfort, made at home</div>
+      </div>
+      <div class="hero-bottom-note" aria-hidden="true">A sweet sip. A soft bite. A good day.</div>
+    </section>
+
+    <div class="ticker" aria-label="Our baking promise"><div class="ticker-track"><span>Freshly baked cookies</span><b>✳</b><span>Fresh lemonade by the gallon</span><b>♡</b><span>Thoughtful gift boxes</span><b>✳</b><span>Small-batch goodness</span><b>♡</b><span>Freshly baked cookies</span><b>✳</b><span>Fresh lemonade by the gallon</span><b>♡</b><span>Thoughtful gift boxes</span><b>✳</b><span>Small-batch goodness</span><b>♡</b></div></div>
+
+    <section class="cookies-section section-wrap section-space" id="cookies" aria-labelledby="cookies-heading">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> From our cookie tin</div><h2 id="cookies-heading">Meet the <em>cookie favorites.</em></h2></div><p>Classic comforts, a little cocoa, a little sparkle. Choose the flavors you'd love in your box; your final mix can be confirmed with your order.</p></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="cookie-footnote reveal"><span aria-hidden="true">✳</span> Cookie box prices are listed below. Choose flavors here to add them to your inquiry.</div>
+      <p class="allergen-disclaimer">Allergen note: cookies contain wheat, milk, eggs, and soy. The kitchen uses nuts. Vegan options are available on request. Products are made in a home kitchen and may contain common allergens.</p>
+    </section>
+
+    <section class="lemonade-section section-space" id="lemonade" aria-labelledby="lemonade-heading">
+      <div class="lemonade-visual reveal">
+        <div class="lemonade-image-frame"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="Refreshing citrus drink with fresh fruit and ice" loading="lazy"></div>
+        <div class="lemonade-note"><span class="handwritten">fresh &amp; sunny</span><br>poured by the gallon</div>
+        <span class="lemonade-spark lemonade-spark-one" aria-hidden="true">✳</span><span class="lemonade-spark lemonade-spark-two" aria-hidden="true">♡</span>
+      </div>
+      <div class="lemonade-copy reveal reveal-later">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A fresh little sip</div>
+        <p class="handwritten lemonade-script">Fresh Lemonade Flavors</p>
+        <h2 id="lemonade-heading">A little sunshine <em>by the gallon.</em></h2>
+        <p class="lemonade-intro">Choose a classic pour or try a fruity favorite. Add a gallon to your order inquiry and tell us how many you'll need.</p>
+        <div class="lemonade-grid" id="lemonade-grid"></div>
+        <p class="lemonade-note-copy">Made with fresh lemons, filtered tap water, and white sugar.</p>
+      </div>
+    </section>
+
+    <section class="pricing-section section-wrap section-space" id="pricing" aria-labelledby="pricing-heading">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> A box for every kind of sharing</div><h2 id="pricing-heading">Sweet little <em>box prices.</em></h2></div><p>Bringing treats to a friend, a gathering, or a whole crowd? Pick a box size and add it to your inquiry.</p></div>
+      <div class="box-grid" id="box-grid"></div>
+      <article class="sample-box-card reveal" aria-labelledby="sample-box-heading">
+        <div class="sample-box-photo"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=600&amp;q=82" alt="A small stack of homemade chocolate chip cookies" loading="lazy"></div>
+        <div class="sample-box-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A little taste of the good stuff</div>
+          <h3 id="sample-box-heading">Meet the <em>Sample Box.</em></h3>
+          <p>Want to try a little before choosing a bigger box? Ask about a sample box and we can confirm the selection, availability, and price with your inquiry.</p>
+        </div>
+        <div class="sample-box-action"><span class="sample-box-price">Price confirmed by inquiry</span><button class="button button-primary" type="button" data-offer="sample-box">Ask about a sample box <span aria-hidden="true">↗</span></button></div>
+      </article>
+      <p class="pricing-note">Prices include packaging. Mix and match cookie flavors. Please allow 2 business days for cookie orders and 1 week for events and larger orders.</p>
+    </section>
+
+    <section class="story-section section-space" id="story" aria-labelledby="story-heading">
+      <div class="story-inner section-wrap">
+        <div class="story-visual reveal"><div class="story-photo-frame"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="A warm home kitchen with a bright, welcoming feel" loading="lazy"></div><div class="story-note"><span class="handwritten">a little flour,</span><br>a whole lot of love</div><span class="story-doodle story-doodle-star" aria-hidden="true">✳</span><span class="story-doodle story-doodle-squiggle" aria-hidden="true">〰</span></div>
+        <div class="story-copy reveal reveal-later"><div class="eyebrow"><span class="eyebrow-line"></span> A note from our kitchen</div><h2 id="story-heading">Homemade treats.<br><em>A feeling of home.</em></h2><p class="story-lead">Some of life's sweetest moments begin with a treat worth sharing.</p><p>Cookies &amp; Lemonade is about familiar favorites, fresh flavors, and thoughtful details. From cookie boxes for someone special to a cool gallon of lemonade for a gathering, the goal is simple: make it easy to bring a little sweetness to the day.</p><p>Thank you for supporting a small, home-kitchen business. Every inquiry, order, and kind word means a lot.</p><div class="signature"><span class="handwritten">With love,</span><strong>Cookies &amp; Lemonade</strong><span class="signature-heart" aria-hidden="true">♥</span></div></div>
+      </div>
+    </section>
+
+    <section class="catering-section section-space" id="catering" aria-labelledby="catering-heading">
+      <div class="catering-inner section-wrap">
+        <div class="catering-copy reveal"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> For a few or a whole bunch</div><p class="handwritten catering-script">Corporate &amp; Large Orders</p><h2 id="catering-heading">A little sweetness <em>for your gathering.</em></h2><p>Make a team treat, resident event, client gift, meeting, or celebration feel extra thoughtful with cookies and lemonade.</p><div class="catering-tags"><span>Employee appreciation</span><span>Resident events</span><span>Client gifts</span><span>Meetings &amp; conferences</span></div><p class="catering-small">For catering, events, or special requests, send an inquiry and we'll follow up to discuss the details.</p><a class="button button-outline-light" href="#order">Ask about a large order <span aria-hidden="true">→</span></a></div>
+        <div class="catering-visual reveal reveal-later"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=1000&amp;q=82" alt="A thoughtfully arranged table ready for a gathering" loading="lazy"><div class="catering-photo-caption"><span class="handwritten">made for sharing</span><br>the sweetest little details</div></div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-wrap section-space" id="gallery" aria-labelledby="gallery-heading">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> A peek at the good stuff</div><h2 id="gallery-heading">Little moments, <em>well served.</em></h2></div><p>A bit of cookie inspiration and cozy kitchen goodness. Swap these sample photos for your own treats and event setups anytime.</p></div>
+      <div class="gallery-grid" id="gallery-grid">
+        <button type="button" class="gallery-tile gallery-tall" data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" data-caption="A batch of chocolate chip cookies"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Fresh chocolate chip cookies" loading="lazy"><span>Cookie tin favorites</span></button>
+        <button type="button" class="gallery-tile" data-image="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" data-caption="Chocolate cookies ready to share"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chocolate cookies arranged for sharing" loading="lazy"><span>Made for sharing</span></button>
+        <button type="button" class="gallery-tile" data-image="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" data-caption="A fresh citrus drink"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A refreshing citrus drink" loading="lazy"><span>Fresh little sips</span></button>
+        <button type="button" class="gallery-tile" data-image="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" data-caption="A cozy home kitchen"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A warm home kitchen" loading="lazy"><span>From our kitchen</span></button>
+      </div>
+      <p class="gallery-disclaimer">Sample photography for the preview; no photos or graphic elements from your reference image are used.</p>
+    </section>
+
+    <section class="order-section section-space" id="order" aria-labelledby="order-heading">
+      <div class="order-doodle order-doodle-one" aria-hidden="true">✳</div><div class="order-doodle order-doodle-two" aria-hidden="true">♡</div>
+      <div class="order-inner section-wrap">
+        <div class="order-copy reveal"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Something sweet is calling</div><h2 id="order-heading">Your next favorite treat <em>is waiting.</em></h2><p>Choose your cookie flavors, add a box or a gallon of lemonade, and prepare an inquiry. We'll confirm availability and any final details with you.</p><div class="order-perks"><span><i aria-hidden="true">✓</i> Box prices shown up front</span><span><i aria-hidden="true">✓</i> Special requests welcome</span><span><i aria-hidden="true">✓</i> Large orders by inquiry</span></div><div class="contact-mini"><p><strong>Call</strong> <a data-phone href="tel:+19194381403">919-438-1403</a></p><p><strong>Email</strong> <a data-email href="mailto:customerservice@cookiesandlemonade.com">customerservice@cookiesandlemonade.com</a></p><p><strong>Area</strong> <span data-location>Austin, TX · Service area</span></p></div></div>
+        <div class="order-card reveal reveal-later">
+          <div class="order-card-head"><div><span class="handwritten order-script">your order note</span><h3>Let's make it a good one.</h3></div><span class="box-icon" aria-hidden="true">♡</span></div>
+          <div id="order-summary" class="order-summary"><p class="empty-basket">Your order is waiting for something sweet. Add a box or lemonade above.</p></div>
+          <div class="flavor-summary" id="flavor-summary" hidden></div>
+          <div class="order-total-row"><span>Listed-price subtotal</span><strong id="order-total">$0.00</strong></div>
+          <p class="quote-note">Custom orders, catering, taxes, availability, and delivery details are confirmed separately.</p>
+          <form id="order-form" class="order-form">
+            <div class="form-row"><label for="customer-name">Name <span aria-hidden="true">*</span><input id="customer-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></label><label for="customer-phone">Phone <span aria-hidden="true">*</span><input id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you" required></label></div>
+            <div class="form-row"><label for="customer-email">Email <span class="optional">(optional)</span><input id="customer-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></label><label for="order-type">Type of order <span aria-hidden="true">*</span><select id="order-type" name="orderType" required><option value="">Choose an option</option><option>Signature Cookies</option><option>Lemonade by the Gallon</option><option>Cookie Box</option><option>Catering / Large Order</option><option>Special Request</option></select></label></div>
+            <div class="form-row"><label for="pickup-date">Date needed <span class="optional">(if applicable)</span><input id="pickup-date" name="date" type="date"></label><label for="service-details">Pickup / delivery details <span class="optional">(to confirm)</span><input id="service-details" name="service" type="text" placeholder="Share your preference"></label></div>
+            <label for="order-notes">Additional details <span class="optional">(flavors, quantities, event, etc.)</span><textarea id="order-notes" name="notes" rows="3" placeholder="Tell us what you have in mind..."></textarea></label>
+            <button class="button button-primary order-submit" type="submit">Prepare order inquiry <span aria-hidden="true">→</span></button><p class="form-fineprint">This prepares a message only. No payment is taken and no order is sent automatically.</p>
+          </form>
+          <div id="order-result" class="order-result" aria-live="polite" hidden><div class="result-heading"><span class="result-check" aria-hidden="true">✓</span><div><strong>Your inquiry is ready.</strong><p id="result-message">Nothing has been sent yet.</p></div></div><textarea id="order-draft" rows="10" aria-label="Order inquiry draft" readonly></textarea><div class="result-actions"><button type="button" class="button button-primary" id="copy-order">Copy inquiry</button><button type="button" class="button button-outline" id="open-email">Open email draft</button><button type="button" class="text-link-button" id="edit-order">Edit details</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="love-section section-wrap section-space" aria-labelledby="love-heading"><div class="section-heading love-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> A little customer love</div><h2 id="love-heading">Kind words are <em>the sweetest.</em></h2></div><div class="placeholder-note"><span aria-hidden="true">✎</span> Sample reviews only — replace with real customer feedback before publishing.</div></div><div class="testimonial-grid reveal"><article class="testimonial-card testimonial-peach"><div class="quote-mark" aria-hidden="true">“</div><div class="review-stars" aria-label="Sample review">★★★★★</div><blockquote>These taste like the cookies you hope someone brought home. The soft middle is everything.</blockquote><p class="review-name">A happy cookie person</p><span class="review-label">Placeholder review</span></article><article class="testimonial-card testimonial-cream"><div class="quote-mark" aria-hidden="true">“</div><div class="review-stars" aria-label="Sample review">★★★★★</div><blockquote>The lemonade made our afternoon feel like a little celebration.</blockquote><p class="review-name">A lemonade fan</p><span class="review-label">Placeholder review</span></article><article class="testimonial-card testimonial-yellow"><div class="quote-mark" aria-hidden="true">“</div><div class="review-stars" aria-label="Sample review">★★★★★</div><blockquote>A thoughtful little gift, packed with care. You can tell a lot of love went into it.</blockquote><p class="review-name">A grateful customer</p><span class="review-label">Placeholder review</span></article></div></section>
+
+    <section class="faq-section section-space" id="faq" aria-labelledby="faq-heading"><div class="faq-inner section-wrap"><div class="faq-intro reveal"><div class="eyebrow"><span class="eyebrow-line"></span> A few helpful details</div><h2 id="faq-heading">Before you <em>order.</em></h2><p>Here's a little guidance to help you plan. For anything special, use the order inquiry and we'll discuss the details with you.</p></div><div class="faq-list reveal reveal-later"><details><summary>How much notice should I give?</summary><p>Please allow 2 business days for cookie orders and 1 week for events and larger orders.</p></details><details><summary>How is lemonade sold?</summary><p>Lemonade is sold by the gallon. Original is $12 per gallon; cucumber, strawberry, and peach are $14 per gallon.</p></details><details><summary>What cookie boxes are available?</summary><p>The Dozen Box is $40 for 12 cookies; the Gift Box is $45 for 12 cookies with ribbon and a card; the Party Box is $76 for 24 cookies; and the Crowd Box is $144 for 48 cookies.</p></details><details><summary>Can I ask about catering or a custom order?</summary><p>Yes. Use the inquiry form for large orders, catering, events, and special requests. Final details and availability will be confirmed separately.</p></details><details><summary>What about allergens?</summary><p>The listed cookies contain wheat, milk, eggs, and soy. The kitchen uses nuts, vegan options are available on request, and products may contain common allergens.</p></details></div></div></section>
+
+    <section class="newsletter-strip" id="contact"><div class="section-wrap newsletter-inner reveal"><div class="newsletter-mark" aria-hidden="true">♡</div><div><span class="handwritten">Let's say hello</span><h2>A sweet little hello goes a long way.</h2><p>Questions, special requests, or planning a gathering? We'd love to hear from you.</p></div><a class="button button-outline" href="#order">Contact the kitchen <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main section-wrap"><div class="footer-brand"><a class="brand brand-footer" href="#top" aria-label="Cookies and Lemonade home"><img class="brand-logo" src="assets/cookies-and-lemonade-logo.svg" alt="Cookies &amp; Lemonade"></a><p class="footer-signoff">Baked with love, one batch at a time. <span aria-hidden="true">♥</span></p></div><div class="footer-links"><h3>Have a look around</h3><a href="#cookies">Cookie menu</a><a href="#lemonade">Lemonade flavors</a><a href="#pricing">Box pricing</a><a href="#catering">Catering &amp; large orders</a></div><div class="footer-links footer-contact"><h3>Come say hello</h3><a data-email href="mailto:customerservice@cookiesandlemonade.com">customerservice@cookiesandlemonade.com</a><a data-phone href="tel:+19194381403">919-438-1403</a><span data-location>Austin, TX · Service area</span><span class="service-note">Ask about delivery details.</span><div class="social-links"><a id="instagram-link" href="#contact" aria-label="Instagram">ig</a><a id="tiktok-link" href="#contact" aria-label="TikTok">tk</a></div></div></div><div class="footer-bottom section-wrap"><span>© <span id="current-year"></span> <span data-bakery-name>Cookies &amp; Lemonade</span></span><span>Made with a little extra <span class="handwritten">heart</span> <span aria-hidden="true">♡</span></span><a href="#top">Back to the top ↑</a></div><div class="footer-allergens section-wrap">Allergen information: contains wheat, milk, eggs, and soy. Kitchen uses nuts. Vegan options available on request. This product is made in a home kitchen and may contain common allergens.</div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview" hidden><button class="lightbox-close" type="button" aria-label="Close photo preview">×</button><figure><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
